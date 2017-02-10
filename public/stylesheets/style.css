@@ -1,0 +1,26 @@
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a {
+  color: #00B7FF;
+}
+
+.error-msg{
+	color: #F40303;
+}
+.success, .error{
+	list-style: none;
+	color:#0B84C3;
+	background-color: #A5EEF6;
+	padding: 20px 10px;
+	border-radius: 4px;
+}
+.error{
+	color:#B32020;
+	background-color:#EF8989;
+}
+.success li{
+	margin-left: 20px;
+}

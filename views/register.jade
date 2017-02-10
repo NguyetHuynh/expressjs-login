@@ -1,0 +1,22 @@
+extends layout
+
+block content
+	h1 Register
+
+	form(method="post", action="/users/register")
+		.form-group
+			label Username
+			input.form-control(type="text", name="username")
+		if errors
+			each error in errors
+				if error.param == 'username'
+					p.error-msg #{error.msg}
+		.form-group		
+			label Password
+			input.form-control(type="password", name="password")
+		if errors
+			each error in errors
+				if error.param == 'password'
+					p.error-msg #{error.msg}
+		button.btn.btn-primary(type="submit") Register
+		
